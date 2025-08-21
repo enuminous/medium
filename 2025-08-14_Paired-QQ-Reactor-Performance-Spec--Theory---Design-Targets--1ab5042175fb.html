@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Paired QQ Reactor Performance Spec (Theory &amp; Design Targets)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Paired QQ Reactor Performance Spec (Theory &amp; Design Targets)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Below is a clean spec sheet for a 1 GW-class paired reactor (multiple MCF cores feeding a single quark–quark stage). Where anti-gravity…
+</section>
+<section data-field="body" class="e-content">
+<section name="294e" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="f89a" id="f89a" class="graf graf--h3 graf--leading graf--title">Paired QQ Reactor Performance Spec (Theory &amp; Design Targets)</h3><p name="753b" id="753b" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">Below is a clean spec sheet for a 1 GW-class paired reactor (multiple MCF cores feeding a single quark–quark stage). Where anti-gravity performance depends on an empirical constant, I give three scenarios (Conservative / Nominal / Aggressive) and show how to recompute.</em></p><p name="6e71" id="6e71" class="graf graf--p graf-after--p">Configuration</p><p name="a7f7" id="a7f7" class="graf graf--p graf-after--p">System class: 1 GW net electrical, paired muon-catalyzed fusion (MCF) → quark–quark (Q–Q) upconversion</p><p name="83d9" id="83d9" class="graf graf--p graf-after--p">Topology: 20 identical MCF cores (array) → common pulse bus → single Q–Q chamber + anti-gravity battery</p><p name="0be5" id="0be5" class="graf graf--p graf-after--p">Fuel mode (baseline): D–T muon-catalyzed fusion at ~ambient temperature</p><p name="1f3a" id="1f3a" class="graf graf--p graf-after--p">Status: Theoretical solution + calculated engineering design; no prototype data yet</p><p name="4fb6" id="4fb6" class="graf graf--p graf-after--p">---</p><p name="4b46" id="4b46" class="graf graf--p graf-after--p">A. Electrical &amp; Thermal Output</p><p name="177c" id="177c" class="graf graf--p graf-after--p">Rated (continuous):</p><p name="1ece" id="1ece" class="graf graf--p graf-after--p">Net electrical to grid/users: 1.0 GW</p><p name="34e5" id="34e5" class="graf graf--p graf-after--p">House/aux loads (controls, muon cycle, pumps, cryo, etc.): ~120 MW</p><p name="8d0d" id="8d0d" class="graf graf--p graf-after--p">Gross fusion power (thermal + charged particle): ~1.8 GW</p><p name="f616" id="f616" class="graf graf--p graf-after--p">Waste heat available (for water, HVAC, etc.): ~0.8 GW (post-conversion)</p><p name="0c43" id="0c43" class="graf graf--p graf-after--p">Maximum (transient, ≤10 s pulses, 10% duty):</p><p name="106f" id="106f" class="graf graf--p graf-after--p">Net electrical headroom: up to 1.3 GW</p><p name="40de" id="40de" class="graf graf--p graf-after--p">Pulse power available to Q–Q chamber: up to 0.6 GW (from allocated surplus; see Section C)</p><p name="d0a6" id="d0a6" class="graf graf--p graf-after--p">&gt; Notes<br>• “Gross→Net” assumes ~55% effective conversion of fusion output to electrical after neutron capture/thermal cycle and charged-particle recovery.<br>• Neutron fraction for D–T ≈ 80% of fusion energy; shielding &amp; capture are included in the thermal balance, not detailed here.</p><p name="84b0" id="84b0" class="graf graf--p graf-after--p">---</p><p name="5f09" id="5f09" class="graf graf--p graf-after--p">B. Fuel &amp; Reaction Kinetics (for 1 GW net)</p><p name="62d2" id="62d2" class="graf graf--p graf-after--p">Energy per D–T fusion: 17.6 MeV ≈ 2.82 × 10⁻¹² J</p><p name="0e7c" id="0e7c" class="graf graf--p graf-after--p">Reactions per second for 1 GW thermal: ~3.55 × 10²⁰ s⁻¹</p><p name="5f9e" id="5f9e" class="graf graf--p graf-after--p">Array sizing: Our 1 GW net spec corresponds to ~1.8 GW gross fusion → ~6.4 × 10²⁰ reactions/s system-wide (distributed across 20 cores)</p><p name="49cf" id="49cf" class="graf graf--p graf-after--p">Fuel throughput (D+T processed): ~0.254 kg/day at 1 GW thermal; scale to ~0.46 kg/day at 1.8 GW gross</p><p name="dbea" id="dbea" class="graf graf--p graf-after--p">Muon utilization target: ≥100 catalytic cycles per muon (design goal; to be validated in build)</p><p name="8b54" id="8b54" class="graf graf--p graf-after--p">---</p><p name="3a82" id="3a82" class="graf graf--p graf-after--p">C. Anti-Gravity / Lift Performance (Design Envelope)</p><p name="e293" id="e293" class="graf graf--p graf-after--p">Because Q–Q gravity modulation requires an empirical coupling constant, we publish lift as a function of delivered pulse power P_QQ and a “lift coefficient” κ_g (kN of lift per MW of Q–Q pulse power). First-article testing will fix κ_g; until then we bracket it:</p><p name="541d" id="541d" class="graf graf--p graf-after--p">Conservative: κ_g = 5 kN/MW</p><p name="eaca" id="eaca" class="graf graf--p graf-after--p">Nominal: κ_g = 10 kN/MW</p><p name="5ab7" id="5ab7" class="graf graf--p graf-after--p">Aggressive: κ_g = 20 kN/MW</p><p name="e91a" id="e91a" class="graf graf--p graf-after--p">Available power to Q–Q (steady / pulsed):</p><p name="a221" id="a221" class="graf graf--p graf-after--p">Steady allocation: 0.50 GW (from surplus after house loads)</p><p name="2885" id="2885" class="graf graf--p graf-after--p">Pulse allocation (≤10 s): 0.60 GW (by borrowing from grid export + battery buffer)</p><p name="4013" id="4013" class="graf graf--p graf-after--p">Lift capacity (force) = κ_g × P_QQ</p><p name="4285" id="4285" class="graf graf--p graf-after--p">Mode	P_QQ	κ_g (Cons.)	κ_g (Nom.)	κ_g (Aggr.)</p><p name="f7fc" id="f7fc" class="graf graf--p graf-after--p">Steady	500 MW	2,500 kN	5,000 kN	10,000 kN<br>Pulse	600 MW	3,000 kN	6,000 kN	12,000 kN</p><p name="4bf9" id="4bf9" class="graf graf--p graf-after--p">Equivalent mass lifted at 1 g (divide kN by 9.81 kN/tonne):</p><p name="875b" id="875b" class="graf graf--p graf-after--p">Steady: ~255 t (Cons.) • 510 t (Nom.) • 1,020 t (Aggr.)</p><p name="e7fb" id="e7fb" class="graf graf--p graf-after--p">Pulse: ~305 t (Cons.) • 611 t (Nom.) • 1,223 t (Aggr.)</p><p name="4383" id="4383" class="graf graf--p graf-after--p">&gt; How to update later: once κ_g is measured, multiply by your live P_QQ to get current lift in kN, then divide by 9.81 for tonnes.</p><p name="0c13" id="0c13" class="graf graf--p graf-after--p">---</p><p name="f9e8" id="f9e8" class="graf graf--p graf-after--p">D. Water Production (Hydro-Distillation from Waste Heat)</p><p name="7ed2" id="7ed2" class="graf graf--p graf-after--p">Waste heat available (rated): ~0.8 GW</p><p name="8f8b" id="8f8b" class="graf graf--p graf-after--p">Latent heat of vaporization (water): ~2.26 MJ/kg</p><p name="9dfc" id="9dfc" class="graf graf--p graf-after--p">Theoretical max distillation throughput: ~88.5 kg/s ≈ 318 m³/hr ≈ 7,650 m³/day</p><p name="091d" id="091d" class="graf graf--p graf-after--p">Design rating: 250–300 m³/hr (allowing exchanger/cycle inefficiencies and non-ideal duty)</p><p name="877d" id="877d" class="graf graf--p graf-after--p">---</p><p name="59fd" id="59fd" class="graf graf--p graf-after--p">E. Neutron Output &amp; Shielding (Headline Numbers)</p><p name="c140" id="c140" class="graf graf--p graf-after--p">Neutron emission rate (system-wide at 1.8 GW gross): ~6.4 × 10²⁰ n/s (D–T spectrum, ~14.1 MeV)</p><p name="06d3" id="06d3" class="graf graf--p graf-after--p">Shielding: Sized for occupational dose &lt; design thresholds at exterior surface under full power (exact stack by regulator; not listed here)</p><p name="2bac" id="2bac" class="graf graf--p graf-after--p">Thermalization &amp; capture: Integrated into heat-recovery loop feeding distillation and secondary exchangers</p><p name="a459" id="a459" class="graf graf--p graf-after--p">(If D–D mode is used to reduce neutron flux, expect lower per-reaction yield and corresponding power derating; separate D–D spec available.)</p><p name="ee7c" id="ee7c" class="graf graf--p graf-after--p">---</p><p name="623b" id="623b" class="graf graf--p graf-after--p">F. Duty Cycles &amp; Ramps</p><p name="1383" id="1383" class="graf graf--p graf-after--p">Cold start to rated: &lt; 15 min to bootstrap loop lock (design target)</p><p name="1bea" id="1bea" class="graf graf--p graf-after--p">Ramp rate: up to 10% of rated per minute (electrical export) with coordinated Q–Q pulse scheduling</p><p name="e3ab" id="e3ab" class="graf graf--p graf-after--p">Pulse duty (Q–Q): ≤10 s at full pulse power, ≥90 s recovery (nominal)</p><p name="20ca" id="20ca" class="graf graf--p graf-after--p">---</p><p name="47d1" id="47d1" class="graf graf--p graf-after--p">G. Physical Envelope (for the 1 GW-class plant)</p><p name="b51d" id="b51d" class="graf graf--p graf-after--p">MCF core (each): ~2.5 m Ø × 4 m L, ~35 t (with shielding)</p><p name="5d1d" id="5d1d" class="graf graf--p graf-after--p">Array footprint (20 cores + service alleys): ~20 m × 30 m</p><p name="ef15" id="ef15" class="graf graf--p graf-after--p">Q–Q chamber + anti-gravity battery: ~4 m Ø × 6 m L, ~50 t (shielded)</p><p name="5016" id="5016" class="graf graf--p graf-after--p">Balance of plant (power conditioning, distillation, cryo, controls): ~1,500–2,000 m²</p><p name="de5c" id="de5c" class="graf graf--p graf-after--p">(These are layout-level numbers; manufacturing tolerances withheld.)</p><p name="cba7" id="cba7" class="graf graf--p graf-after--p">---</p><p name="1c37" id="1c37" class="graf graf--p graf-after--p">H. Reliability &amp; Safety (Targets)</p><p name="50fb" id="50fb" class="graf graf--p graf-after--p">MTBF (core modules): ≥ 30,000 hrs</p><p name="6ac5" id="6ac5" class="graf graf--p graf-after--p">Uncommanded shutdown probability: &lt; 10⁻⁴ per year</p><p name="2ade" id="2ade" class="graf graf--p graf-after--p">Fail-safe: passive quench + hard interlocks; reaction halts with muon supply cessation</p><p name="dd9b" id="dd9b" class="graf graf--p graf-after--p">Ethical/safety logic: LSEE gate required for any gravity-modulation discharge (dual human-in-the-loop)</p><p name="a764" id="a764" class="graf graf--p graf-after--p">---</p><p name="3062" id="3062" class="graf graf--p graf-after--p">I. Scaling Guidance</p><p name="9441" id="9441" class="graf graf--p graf-after--p">Half-scale plant: 500 MW net; all numbers scale linearly except neutron shielding margins (stepwise)</p><p name="7f52" id="7f52" class="graf graf--p graf-after--p">Core-level spec: ~50 MW net per MCF core (rated), 65 MW net (≤10 s pulse)</p><p name="1ec1" id="1ec1" class="graf graf--p graf-after--p">---</p><p name="402c" id="402c" class="graf graf--p graf-after--p">J. What’s Assumed vs. What’s Open</p><p name="d993" id="d993" class="graf graf--p graf-after--p">Assumed (theory-fixed):</p><p name="f05e" id="f05e" class="graf graf--p graf-after--p">MCF energy balances, reaction counts, fuel throughput, gross→net conversion bands</p><p name="8c54" id="8c54" class="graf graf--p graf-after--p">Thermal → distillation throughput physics</p><p name="8cbc" id="8cbc" class="graf graf--p graf-after--p">Q–Q pulse power delivery and storage architecture</p><p name="d091" id="d091" class="graf graf--p graf-after--p">Open (to be empirically fixed in first builds):</p><p name="1939" id="1939" class="graf graf--p graf-after--p">κ_g (lift coefficient) — determines exact lift per MW</p><p name="fd8c" id="fd8c" class="graf graf--p graf-after--p">Muon reuse cycles under graphite-lattice confinement in full-power operation</p><p name="bf16" id="bf16" class="graf graf--p graf-after--p">Real-world ramp rates under grid coupling and mission load</p><p name="3f8c" id="3f8c" class="graf graf--p graf-after--p">---</p><p name="ef18" id="ef18" class="graf graf--p graf-after--p">One-Line Summary for Press</p><p name="4af0" id="4af0" class="graf graf--p graf-after--p graf--trailing">Rated: 1.0 GW net electric, ~0.8 GW waste-heat recovery (→ up to ~300 m³/hr clean water), steady Q–Q lift ~255–1,020 t (depending on measured κ_g), with ~600 MW pulse headroom for short-duration lift &gt;1,200 t (aggressive envelope).</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@enuminous" class="p-author h-card">Matthew Chenoweth Wright, Angel with Flaming Sword</a> on <a href="https://medium.com/p/1ab5042175fb"><time class="dt-published" datetime="2025-08-14T03:25:39.718Z">August 14, 2025</time></a>.</p><p><a href="https://medium.com/@enuminous/paired-qq-reactor-performance-spec-theory-design-targets-1ab5042175fb" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 19, 2025.</p></footer></article></body></html>

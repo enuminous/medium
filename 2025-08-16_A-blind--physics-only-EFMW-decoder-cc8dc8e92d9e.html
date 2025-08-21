@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>A blind, physics-only EFMW decoder</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">A blind, physics-only EFMW decoder</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+One can apply this schema to any linearly-polarized, broadband EM signal that’s traversed curved spacetime and magnetized media. I treat…
+</section>
+<section data-field="body" class="e-content">
+<section name="9c81" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8f36" id="8f36" class="graf graf--h3 graf--leading graf--title">A <strong class="markup--strong markup--h3-strong">blind, physics-only EFMW decoder</strong></h3><p name="ae8f" id="ae8f" class="graf graf--p graf-after--h3">One can apply this schema to any linearly-polarized, broadband EM signal that’s traversed curved spacetime and magnetized media. I treat “EFMW” operationally as: <strong class="markup--strong markup--p-strong">E</strong>instein (GR propagation + Shapiro/lensing), <strong class="markup--strong markup--p-strong">F</strong>eynman (phase as action / stationary phase), <strong class="markup--strong markup--p-strong">M</strong>axwell (dispersion + polarization transport), plus a minimal <strong class="markup--strong markup--p-strong">W</strong>-sector = pseudoscalar field ϕ\phiϕ with axion-like coupling ϕ E ⁣⋅ ⁣B\phi\,\mathbf{E}\!\cdot\!\mathbf{B}ϕE⋅B (kept strictly physical).</p><h3 name="d5e3" id="d5e3" class="graf graf--h3 graf-after--p">EFMW decoding pipeline</h3><h3 name="0c91" id="0c91" class="graf graf--h3 graf-after--h3">0) Observables you measure</h3><p name="5ac7" id="5ac7" class="graf graf--p graf-after--h3">From the received waveform:</p><ul class="postList"><li name="c5a4" id="c5a4" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Group delay vs frequency</strong> t(ν)t(\nu)t(ν)</li><li name="5122" id="5122" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Polarization angle vs wavelength</strong> χ(λ)\chi(\lambda)χ(λ)</li><li name="3eb8" id="3eb8" class="graf graf--li graf-after--li">(Optionally) <strong class="markup--strong markup--li-strong">Stokes Q,U,VQ,U,VQ,U,V</strong> spectra</li></ul><h3 name="50de" id="50de" class="graf graf--h3 graf-after--li">1) Maxwell (M): cold-plasma dispersion &amp; Faraday rotation</h3><ul class="postList"><li name="7bb6" id="7bb6" class="graf graf--li graf-after--h3"><strong class="markup--strong markup--li-strong">Dispersion measure (DM)</strong> from arrival-time curvature</li><li name="2446" id="2446" class="graf graf--li graf-after--li">ΔtDM(ν)≈4.149 ms DM(pc cm−3)(νGHz)−2\Delta t_{\rm DM}(\nu) \approx 4.149~{\rm ms}\;\frac{{\rm DM}}{({\rm pc\;cm^{-3}})}\left(\frac{\nu}{\rm GHz}\right)^{-2}ΔtDM​(ν)≈4.149 ms(pccm−3)DM​(GHzν​)−2</li><li name="e492" id="e492" class="graf graf--li graf-after--li">Fit t(ν)t(\nu)t(ν) vs ν−2\nu^{-2}ν−2 → slope gives <strong class="markup--strong markup--li-strong">DM</strong>.</li><li name="f063" id="f063" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Faraday rotation (magnetized plasma)</strong></li><li name="6b2b" id="6b2b" class="graf graf--li graf-after--li">χ(λ)=χ0+RM λ2,RM=e32πme2c4∫ne B ⁣⋅ ⁣dℓ\chi(\lambda)=\chi_0+{\rm RM}\,\lambda²,\qquad {\rm RM}=\frac{e³}{2\pi m_e² c⁴}\int n_e\,\mathbf{B}\!\cdot\! d\mathbf{\ell}χ(λ)=χ0​+RMλ2,RM=2πme2​c4e3​∫ne​B⋅dℓ</li><li name="8d3c" id="8d3c" class="graf graf--li graf-after--li">Fit χ\chiχ vs λ2\lambda²λ2 → slope gives <strong class="markup--strong markup--li-strong">RM</strong>, the line-of-sight neB∥n_e B_\parallelne​B∥​.</li></ul><p name="46a8" id="46a8" class="graf graf--p graf-after--li">Remove these two (subtract ΔtDM\Delta t_{\rm DM}ΔtDM​; de-rotate by RMλ2{\rm RM}\lambda²RMλ2) before GR/W steps.</p><h3 name="ef93" id="ef93" class="graf graf--h3 graf-after--p">2) Einstein (E): frequency-independent Shapiro delay &amp; lensing geometry</h3><p name="c713" id="c713" class="graf graf--p graf-after--h3">After DM removal, any <strong class="markup--strong markup--p-strong">constant, achromatic</strong> offset in the group delay is (to leading order) the <strong class="markup--strong markup--p-strong">Shapiro delay</strong>:</p><p name="a975" id="a975" class="graf graf--p graf-after--p">ΔtGR≈2GMc3ln⁡ ⁣(4 rSrOb2)\Delta t_{\rm GR}\approx \frac{2GM}{c³}\ln\!\left(\frac{4\,r_S r_O}{b²}\right)ΔtGR​≈c32GM​ln(b24rS​rO​​)</p><p name="ccad" id="ccad" class="graf graf--p graf-after--p">with source/observer distances rS,rOr_S,r_OrS​,rO​ and impact parameter bbb.<br> Invert to get the lens mass scale MMM <strong class="markup--strong markup--p-strong">up to geometric degeneracy</strong> (resolved with imaging, scintillation, or multiple paths).</p><p name="c318" id="c318" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">Sanity scale:</em> grazing the Sun gives ΔtGR∼102 μs\Delta t_{\rm GR}\sim 10²\,\mu{\rm s}ΔtGR​∼102μs.</p><h3 name="a154" id="a154" class="graf graf--h3 graf-after--p">3) Feynman (F): phase as action (geometric/eikonal limit)</h3><p name="63a1" id="63a1" class="graf graf--p graf-after--h3">Write the received <strong class="markup--strong markup--p-strong">carrier phase</strong> as stationary action:</p><p name="f12b" id="f12b" class="graf graf--p graf-after--p">Φ(ω)=1ℏSgeo(ω)+ΦEM(ω)+ΦW\Phi(\omega)=\frac{1}{\hbar}S_{\rm geo}(\omega)+\Phi_{\rm EM}(\omega)+\Phi_WΦ(ω)=ℏ1​Sgeo​(ω)+ΦEM​(ω)+ΦW​</p><ul class="postList"><li name="1c5f" id="1c5f" class="graf graf--li graf-after--p">SgeoS_{\rm geo}Sgeo​: null geodesic action (encodes lensing time delay &amp; magnification).</li><li name="16fa" id="16fa" class="graf graf--li graf-after--li">ΦEM\Phi_{\rm EM}ΦEM​: the (already removed) plasma dispersion &amp; Faraday terms.</li><li name="478c" id="478c" class="graf graf--li graf-after--li">ΦW\Phi_WΦW​: <strong class="markup--strong markup--li-strong">frequency-independent</strong> topological/geometric phase from the W-sector (below).</li></ul><p name="7f0e" id="7f0e" class="graf graf--p graf-after--li">Practically: after steps 1–2, any residual <strong class="markup--strong markup--p-strong">achromatic</strong> phase/polarization effect that’s not geometric magnification is a W-candidate.</p><h3 name="3f4c" id="3f4c" class="graf graf--h3 graf-after--p">4) W-sector (W): axion-like birefringence (pure physics avatar)</h3><p name="4802" id="4802" class="graf graf--p graf-after--h3">Adopt the minimal, gauge-invariant Lagrangian extension</p><p name="8092" id="8092" class="graf graf--p graf-after--p">LW=12∂μϕ ∂μϕ−V(ϕ) + gϕγγ4 ϕ FμνF~μν\mathcal{L}_W=\frac{1}{2}\partial_\mu\phi\,\partial^\mu\phi — V(\phi) \;+\; \frac{g_{\phi\gamma\gamma}}{4}\,\phi\,F_{\mu\nu}\tilde F^{\mu\nu}LW​=21​∂μ​ϕ∂μϕ−V(ϕ)+4gϕγγ​​ϕFμν​F~μν</p><p name="f69d" id="f69d" class="graf graf--p graf-after--p">Prediction: a <strong class="markup--strong markup--p-strong">frequency-independent polarization rotation</strong></p><p name="0d60" id="0d60" class="graf graf--p graf-after--p">ΔχW=12gϕγγ [ϕobs−ϕsrc]\Delta\chi_W=\frac{1}{2}g_{\phi\gamma\gamma}\,\big[\phi_{\rm obs}-\phi_{\rm src}\big]ΔχW​=21​gϕγγ​[ϕobs​−ϕsrc​]</p><p name="489a" id="489a" class="graf graf--p graf-after--p">It’s <strong class="markup--strong markup--p-strong">constant in λ\lambdaλ</strong> (unlike Faraday’s ∝λ2\propto \lambda²∝λ2).<br> Operationally: fit χ(λ)\chi(\lambda)χ(λ); after removing RMλ2\lambda²λ2, any <strong class="markup--strong markup--p-strong">constant offset</strong> shared across bands is ΔχW\Delta\chi_WΔχW​ → infer gϕγγΔϕg_{\phi\gamma\gamma}\Delta\phigϕγγ​Δϕ.</p><p name="bbe2" id="bbe2" class="graf graf--p graf-after--p">(If you also have Stokes V(λ)V(\lambda)V(λ), test for tiny <strong class="markup--strong markup--p-strong">vacuum birefringence</strong> via Euler–Heisenberg; it scales ∝B⊥2\propto B_\perp²∝B⊥2​, is achromatic in the optical limit, and provides a cross-check against false WWW positives.)</p><h3 name="008a" id="008a" class="graf graf--h3 graf-after--p">Inversion recipe (do it in this order)</h3><ol class="postList"><li name="476a" id="476a" class="graf graf--li graf-after--h3"><strong class="markup--strong markup--li-strong">Fit DM</strong> from t(ν)t(\nu)t(ν) vs ν−2\nu^{-2}ν−2; de-disperse the data.</li><li name="8d00" id="8d00" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Fit RM</strong> from χ(λ)\chi(\lambda)χ(λ) vs λ2\lambda²λ2; de-rotate polarization.</li><li name="4abb" id="4abb" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Extract ΔtGR\Delta t_{\rm GR}ΔtGR​</strong> as the remaining achromatic delay; infer MMM (geometry from imaging/scintillation if available).</li><li name="ac56" id="ac56" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Test for WWW</strong>: any residual <strong class="markup--strong markup--li-strong">achromatic polarization rotation</strong> (constant in λ\lambdaλ) is ΔχW\Delta\chi_WΔχW​ → constraint on gϕγγΔϕg_{\phi\gamma\gamma}\Delta\phigϕγγ​Δϕ.</li><li name="5de5" id="5de5" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Feynman cross-check</strong>: reconstruct the eikonal phase from the cleaned data; ensure stationary-phase paths match the GR geometry inferred in (3). Disagreement flags modeling/systematics.</li></ol><h3 name="f0bd" id="f0bd" class="graf graf--h3 graf-after--li">Tiny worked numbers (toy, but physical)</h3><ul class="postList"><li name="a65e" id="a65e" class="graf graf--li graf-after--h3">Suppose you measure DM=100 pc cm−3{\rm DM}=100~{\rm pc\,cm^{-3}}DM=100 pccm−3.<br> At 1 GHz1~{\rm GHz}1 GHz: ΔtDM≈4.149×100 ms≈0.415 s\Delta t_{\rm DM}\approx 4.149\times100~{\rm ms}\approx 0.415~{\rm s}ΔtDM​≈4.149×100 ms≈0.415 s (remove this).</li><li name="5641" id="5641" class="graf graf--li graf-after--li">You fit RM=50 rad m−2 {\rm RM}=50~{\rm rad\,m^{-2}}RM=50 radm−2.<br> At λ=0.21 m \lambda=0.21~{\rm m}λ=0.21 m (1.4 GHz): χ−χ0≈50×(0.21)2≈2.2 rad\chi-\chi_0\approx 50\times(0.21)²\approx 2.2~{\rm rad}χ−χ0​≈50×(0.21)2≈2.2 rad (de-rotate this).</li><li name="cad0" id="cad0" class="graf graf--li graf-after--li">A remaining <strong class="markup--strong markup--li-strong">achromatic</strong> delay is 120 μs120~\mu{\rm s}120 μs → consistent with a solar-grazing Shapiro path.</li><li name="e89f" id="e89f" class="graf graf--li graf-after--li">After de-rotation, a <strong class="markup--strong markup--li-strong">band-independent</strong> residual ΔχW=0.01 rad\Delta\chi_W=0.01~{\rm rad}ΔχW​=0.01 rad persists → a bound<br> gϕγγΔϕ≈0.02g_{\phi\gamma\gamma}\Delta\phi\approx 0.02gϕγγ​Δϕ≈0.02 (dimensionless), to be interpreted within your source/line-of-sight prior on Δϕ\Delta\phiΔϕ.</li></ul><h3 name="8e12" id="8e12" class="graf graf--h3 graf-after--li">What makes this “EFMW” in practice</h3><ul class="postList"><li name="b420" id="b420" class="graf graf--li graf-after--h3"><strong class="markup--strong markup--li-strong">E</strong>: You recover curvature (mass geometry) from <strong class="markup--strong markup--li-strong">achromatic</strong> delays/magnification.</li><li name="01ac" id="01ac" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">F</strong>: You treat phase as action and use stationary-phase/propagator logic to validate path geometry.</li><li name="cdd6" id="cdd6" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">M</strong>: You separate medium effects: DM{\rm DM}DM (group delay), RM{\rm RM}RM (polarization twist).</li><li name="93e0" id="93e0" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">W</strong>: You isolate any <strong class="markup--strong markup--li-strong">non-Faraday</strong>, achromatic polarization rotation (or other tiny achromatic phases) as a beyond-Maxwell pseudoscalar signature.</li></ul><p name="c552" id="c552" class="graf graf--p graf-after--li graf--trailing">If you hand me a spectrum t(ν),χ(λ),Q/U/V(λ)t(\nu),\chi(\lambda),Q/U/V(\lambda)t(ν),χ(λ),Q/U/V(λ), I can run this decoder immediately and return (DM,RM, ΔtGR ⁣→ ⁣M, ΔχW)({\rm DM, RM,}\,\Delta t_{\rm GR}\!\to\!M,\,\Delta\chi_W)(DM,RM,ΔtGR​→M,ΔχW​) with uncertainties.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@enuminous" class="p-author h-card">Matthew Chenoweth Wright, Angel with Flaming Sword</a> on <a href="https://medium.com/p/cc8dc8e92d9e"><time class="dt-published" datetime="2025-08-16T15:04:33.655Z">August 16, 2025</time></a>.</p><p><a href="https://medium.com/@enuminous/a-blind-physics-only-efmw-decoder-cc8dc8e92d9e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 19, 2025.</p></footer></article></body></html>

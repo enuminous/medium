@@ -1,5 +1,13 @@
 # eNuminous papers and essays
 
+<!-- ENUMINOUS-LIFECYCLE:START -->
+**Lifecycle review — 2026-10-16: partial article duplication; unique writing retained.**
+
+Exactly 100 article HTML files (97 dated exports and 3 drafts) are byte-identical in `medium` and `Medium2` at the reviewed commits. The [duplicate-article ledger](https://github.com/enuminous/Medium2/blob/main/DUPLICATE_ARTICLES.md) identifies every file and Git blob hash. Use the existing `medium` location as the preferred reference for those shared files. Both archives also contain unique writing; neither archive is wholly obsolete. Original article text and dates are preserved.
+
+[Portfolio review and evidence](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/portfolio/REPOSITORY_LIFECYCLE_2026-10-16.md).
+<!-- ENUMINOUS-LIFECYCLE:END -->
+
 <!-- ENUMINOUS-NETWORK:START -->
 **eNuminous network:** [All repositories](https://enuminous.github.io/EFMW/repositories.html) · [EFMW](https://enuminous.github.io/EFMW/) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [165 triplets](https://enuminous.github.io/FieldSpace/) · [Zoo](https://enuminous.github.io/Tortoise/) · [Lean](https://enuminous.github.io/Aristotle-102-Monolithic-Lean/) · [Engine](https://enuminous.github.io/Archimedes-Engine/) · [Papers](https://enuminous.github.io/medium/papers-essays-index.html) · [Audit](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/portfolio/INTERLOCK_AUDIT.md)
 
